@@ -1,0 +1,18 @@
+{{#each languages}}
+import {{this.propertyName}} from './{{this.propertyName}}';
+{{/each}}
+import { I18N } from './i18n';
+
+export interface IDefaultExports {
+  {{#each languages}}
+  {{this.propertyName}}: I18N;
+  {{/each}}
+}
+
+const defaultExports: IDefaultExports = {
+  {{#each languages}}
+  {{this.propertyName}},
+  {{/each}}
+};
+
+export default defaultExports;

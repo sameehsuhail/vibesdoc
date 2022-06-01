@@ -1,0 +1,10 @@
+
+export interface I18N {
+{{#each items}}
+{{#if this.hasVariables}}
+  {{this.key}}: ({{#each this.variables}}{{this}}: string{{#unless @last}}, {{/unless}}{{/each}}) => string;
+{{else}}
+  {{this.key}}: string;
+{{/if}}
+{{/each}}
+}

@@ -1,0 +1,16 @@
+# copy all files and folders from source to destination server
+scp -i <path to private key> ./*  <user>@<ip address>:<destination path>
+
+# cd to the path of covid backend binary and run the command to start it
+/home/ubuntu/covid
+nohup ./covid &
+
+# cd to the path of python server and run the command to start it
+/home/ubuntu/predictor/classification
+nohup python3 application.py &
+
+
+
+
+
+

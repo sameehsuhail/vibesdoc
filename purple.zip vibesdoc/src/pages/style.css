@@ -1,0 +1,41 @@
+#pagelogo {
+    padding: 1rem;
+ }
+
+ #four04h {
+    color: #4e8084;
+    text-align: center;
+    margin: auto;
+    font-size: 15rem;
+ }
+
+ #four04p {
+    text-align: center;
+    margin: auto;
+    font-size: 1.5rem;
+ }
+
+ #centered {
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    display: block;
+    padding: 1%;
+    width: 80%;
+ }
+
+#box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40rem;
+}
+
+#content {
+    box-sizing: border-box;
+    display: block;
+    margin-left: auto;
+    margin-top: auto;
+    width: 80rem;
+    padding: 1%;
+}
+

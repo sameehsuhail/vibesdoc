@@ -1,0 +1,10 @@
+(reverse-i-search)`nohup': nohup ./covid &
+
+
+(reverse-i-search)`nohup': nohup python3 application.py &
+
+/home/ubuntu/covid
+
+
+/home/ubuntu/predictor/classification
+

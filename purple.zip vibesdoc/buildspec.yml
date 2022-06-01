@@ -1,0 +1,11 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - yarn install
+      - yarn build
+artifacts:
+  files:
+    - build/**/*
+    - Procfile
+    - .ebextensions/**/*

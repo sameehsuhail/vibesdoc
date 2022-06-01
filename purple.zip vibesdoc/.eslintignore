@@ -1,0 +1,3 @@
+# Ignore files from i18n folder
+src/i18n/*
+

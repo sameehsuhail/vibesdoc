@@ -1,0 +1,14 @@
+import { I18N } from './i18n';
+
+// ignore warning as we are defining it lazily
+const lang: I18N = {} as I18N;
+
+{{#each items as |item|}}
+{{#if item.hasVariables}}
+lang.{{item.key}} = ({{#each this.variables}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}) => `{{{lookup item ../language}}}`;
+{{else}}
+lang.{{item.key}} = '{{{lookup item ../language}}}';
+{{/if}}
+{{/each}}
+
+export default lang;
